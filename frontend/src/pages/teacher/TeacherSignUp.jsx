@@ -13,7 +13,7 @@ function TeacherSignUp() {
     console.log('Payload:', payload);
 
     try {
-      const response = await fetch('http://127.0.0.1:5000/signup/teacher', {
+      const response = await fetch('https://quiz-1-f64v.onrender.com/signup/teacher', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -24,11 +24,11 @@ const StudentDashboard = () => {
         }
 
         const [quizzesResponse, attemptedResponse] = await Promise.all([
-          fetch('http://127.0.0.1:5000/student', {
+          fetch('https://quiz-1-f64v.onrender.com/student', {
             method: 'GET',
             headers: { Authorization: token },
           }),
-          fetch('http://127.0.0.1:5000/student/get-quiz-id', {
+          fetch('https://quiz-1-f64v.onrender.com/student/get-quiz-id', {
             method: 'GET',
             headers: { Authorization: token },
           }),

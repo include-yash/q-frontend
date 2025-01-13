@@ -11,7 +11,7 @@ const Leader = () => {
   useEffect(() => {
     const fetchLeaderboard = async () => {
       try {
-        const response = await fetch(`http://127.0.0.1:5000/student/leaderboard/${testId}`, {
+        const response = await fetch(`https://quiz-1-f64v.onrender.com/student/leaderboard/${testId}`, {
           method: 'GET',
           headers: {
             'Authorization': localStorage.getItem('token'), // Include the token for authorization

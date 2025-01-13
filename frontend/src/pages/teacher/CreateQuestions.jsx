@@ -73,7 +73,7 @@ const CreateQuestions = () => {
             questions: JSON.stringify(questions),
         };
         try {
-            const response = await fetch('http://127.0.0.1:5000/teacher/createquiz', {
+            const response = await fetch('https://quiz-1-f64v.onrender.com/teacher/createquiz', {
                 method: 'POST',
                 headers: {
                     'Authorization': token,

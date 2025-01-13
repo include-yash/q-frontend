@@ -31,7 +31,7 @@ const TakeTest = () => {
         }
 
         // Fetch attempted quizzes
-        const response = await fetch('http://127.0.0.1:5000/student/get-quiz-id', {
+        const response = await fetch('https://quiz-1-f64v.onrender.com/student/get-quiz-id', {
           method: 'GET',
           headers: {
             'Authorization': token,
@@ -154,7 +154,7 @@ const TakeTest = () => {
         return;
       }
 
-      const response = await fetch('http://127.0.0.1:5000/student/get-quiz-id', {
+      const response = await fetch('https://quiz-1-f64v.onrender.com/student/get-quiz-id', {
         method: 'GET',
         headers: {
           'Authorization': token,
@@ -184,7 +184,7 @@ const TakeTest = () => {
       };
 
       // Step 4: Save the score in the backend
-      const saveResponse = await fetch('http://127.0.0.1:5000/student/savescore', {
+      const saveResponse = await fetch('https://quiz-1-f64v.onrender.com/student/savescore', {
         method: 'POST',
         headers: {
           'Authorization': token,

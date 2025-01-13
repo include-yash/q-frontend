@@ -10,7 +10,7 @@ const TabSwitch = () => {
     // Fetch data from the API when the component mounts or quizId changes
     const fetchTabSwitchEvents = async () => {
       try {
-        const response = await fetch(`http://127.0.0.1:5000/teacher/tab-switch/${quizId}`, {
+        const response = await fetch(`https://quiz-1-f64v.onrender.com/teacher/tab-switch/${quizId}`, {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${localStorage.getItem('student_token')}`, // Assuming the token is stored in localStorage

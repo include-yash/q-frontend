@@ -17,7 +17,7 @@ function ViewTests() {
       return;
     }
 
-    fetch('http://127.0.0.1:5000/teacher/displayquiz', {
+    fetch('https://quiz-1-f64v.onrender.com/teacher/displayquiz', {
       method: 'GET',
       headers: {
         Authorization: token,
